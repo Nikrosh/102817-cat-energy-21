@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Подбор программы</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="header-bar">
+        <img src="https://via.placeholder.com/33x37" alt="Логотип" class="header--logo-1">
+        <img src="https://via.placeholder.com/101x18" alt="Подпись" class="header--logo-2">
+        <button class="header--switch" aria-label="Меню"></button>
+        <ul class="header--menu">
+          <li class="header--menu-item"><a href="">главная</a></li>
+          <li class="header--menu-item"><a href="">каталог продукции</a></li>
+          <li class="header--menu-item"><a href="">подбор программы</a></li>
+        </ul> 
+      </nav>
+      <div class="header--info">
+        <h1 class="header--main-title main-title">Подбор программы</h1>
+        <p class="header--discription">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
+    </header>
+
+    <section class="form">
+        <form action="https://echo.htmlacademy.ru">
+
+            <fieldset class="form--fieldset">
+                <p class="form--name">
+                    <label for="name">ИМЯ:*</label>
+                    <input type="name" name="name" id="name" placeholder="бaрсик">
+                </p>
+                <p class="form--weight">
+                    <label for="weight">Вес (кг):*</label>
+                    <input type="text" name="weight" id="weight" placeholder="7">
+                </p>
+                <p class="form--age">
+                    <label for="age">Возраст (лет):</label>
+                    <input type="text" name="age" id="age" placeholder="7">
+                </p>
+            </fieldset>
+
+            <fieldset class="form--fieldset">
+                <p>
+                    <input type="radio" name="target" id="fit" checked>
+                    <label for="fit">похудение</label>
+                </p>
+                <p>
+                    <input type="radio" name="target" id="fat">
+                    <label for="fat">Набор массы</label>
+                </p>
+                <p>
+                    <input type="radio" name="target" id="dont-know">
+                    <label for="dont-know">Не знаю (Нужен ваш совет)</label>
+                </p>
+            </fieldset>
+
+            <fieldset class="form--fieldset">
+
+                <legend class="form--legend second-title">Контактные данные (владельца кота)</legend>
+
+                <p class="form--mail">
+                    <label for="mail">E-mail:*</label>
+                    <input type="mail" name="mail" id="mail" placeholder="kuklachev@gmail.com">
+                </p>
+                <p class="form--phone">
+                    <label for="phone">Вес (кг):*</label>
+                    <input type="phone" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+                </p>
+            </fieldset>
+
+            <fieldset class="form--fieldset">
+
+                <legend class="form--legend second-title">Комментарий</legend>
+
+                <textarea name="comment" id="comment" cols="30" rows="10">Расскажите обо всех повАдках кота</textarea>
+            </fieldset>
+
+            <fieldset class="form--fieldset">
+
+                <legend class="form--legend second-title">Дополнительно</legend>
+
+                <p class="form--checkbox">
+                    <input type="checkbox" name="sugar" id="sugar" checked>
+                    <label for="sugar">сахарозаменитель</label>
+                </p>
+                <p class="form--checkbox">
+                    <input type="checkbox" name="water" id="water">
+                    <label for="water">питьевая вода</label>
+                </p>
+                <p class="form--checkbox">
+                    <input type="checkbox" name="milk" id="milk">
+                    <label for="milk">молоко</label>
+                </p>
+                <p class="form--checkbox">
+                    <input type="checkbox" name="vit" id="vit">
+                    <label for="vit">витамины</label>
+                </p>
+            </fieldset>
+
+            <button type="submit" class="form--button button">отправить заявку</button>
+
+            <p class="form--footnote">* — Обязательные поля</p>
+
+        </form>
+    </section>
+
+    <section class="adress--location">
+        <div>
+          <h3 class="adress--title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="adress--content">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
+        <div class="adress--map">
+        </div>
+      </section>
+
+    <footer class="footer">
+      <img src="https://via.placeholder.com/128x24" alt="Логотип" class="footer--logo">
+      <ul class="footer--social social">
+        <li class="social--button social--button__vk"><a href="#"></a></li>
+        <li class="social--button social--button__ins"><a href="#"></a></li>
+        <li class="social--button social--button__fb"><a href="#"></a></li>
+      </ul>
+      <div class="footer--academy">
+        <a href="#" class="footer--academy-link"></a>
+        <img src="https://via.placeholder.com/27x34" alt="Academy" class="footer--academy-img">
+      </div>
+    </footer>
+
+  </body>
+</html>
