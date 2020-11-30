@@ -8,40 +8,39 @@
 
     <header class="header">
       <nav class="header-bar">
-        <img src="https://via.placeholder.com/33x37" alt="Логотип" class="header--logo-1">
-        <img src="https://via.placeholder.com/101x18" alt="Подпись" class="header--logo-2">
-        <button class="header--switch" aria-label="Меню"></button>
-        <ul class="header--menu">
-          <li class="header--menu-item"><a href="">главная</a></li>
-          <li class="header--menu-item"><a href="">каталог продукции</a></li>
-          <li class="header--menu-item"><a href="">подбор программы</a></li>
+        <img src="https://via.placeholder.com/190x37" alt="Логотип" class="header__logo">
+        <button class="header__switch" aria-label="Меню"></button>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="">главная</a></li>
+          <li class="header__menu-item"><a href="">каталог продукции</a></li>
+          <li class="header__menu-item"><a href="">подбор программы</a></li>
         </ul> 
       </nav>
-      <div class="header--info">
-        <h1 class="header--main-title main-title">Подбор программы</h1>
-        <p class="header--discription">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <div class="header__info">
+        <h1 class="header__main-title main-title">Подбор программы</h1>
+        <p class="header__discription">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
     </header>
 
     <section class="form">
         <form action="https://echo.htmlacademy.ru">
 
-            <fieldset class="form--fieldset">
-                <p class="form--name">
+            <fieldset class="form__fieldset">
+                <p class="form__name">
                     <label for="name">Имя:*</label>
                     <input type="name" name="name" id="name" placeholder="бaрсик">
                 </p>
-                <p class="form--weight">
+                <p class="form__weight">
                     <label for="weight">Вес (кг):*</label>
                     <input type="text" name="weight" id="weight" placeholder="7">
                 </p>
-                <p class="form--age">
+                <p class="form__age">
                     <label for="age">Возраст (лет):</label>
                     <input type="text" name="age" id="age" placeholder="7">
                 </p>
             </fieldset>
 
-            <fieldset class="form--fieldset">
+            <fieldset class="form__fieldset">
                 <p>
                     <input type="radio" name="target" id="fit" checked>
                     <label for="fit">похудение</label>
@@ -56,75 +55,75 @@
                 </p>
             </fieldset>
 
-            <fieldset class="form--fieldset">
+            <fieldset class="form__fieldset">
 
-                <legend class="form--legend second-title">Контактные данные (владельца кота)</legend>
+                <legend class="form__legend second-title">Контактные данные (владельца кота)</legend>
 
-                <p class="form--mail">
+                <p class="form__mail">
                     <label for="mail">E-mail:*</label>
                     <input type="mail" name="mail" id="mail" placeholder="kuklachev@gmail.com">
                 </p>
-                <p class="form--phone">
+                <p class="form__phone">
                     <label for="phone">Вес (кг):*</label>
                     <input type="phone" name="phone" id="phone" placeholder="8 (960) 900-60-90">
                 </p>
             </fieldset>
 
-            <fieldset class="form--fieldset">
+            <fieldset class="form__fieldset">
 
-                <legend class="form--legend second-title">Комментарий</legend>
+                <legend class="form__legend second-title">Комментарий</legend>
 
                 <textarea name="comment" id="comment" cols="30" rows="10">Расскажите обо всех повАдках кота</textarea>
             </fieldset>
 
-            <fieldset class="form--fieldset">
+            <fieldset class="form__fieldset">
 
-                <legend class="form--legend second-title">Дополнительно</legend>
+                <legend class="form__legend second-title">Дополнительно</legend>
 
-                <p class="form--checkbox">
+                <p class="form__checkbox">
                     <input type="checkbox" name="sugar" id="sugar" checked>
                     <label for="sugar">сахарозаменитель</label>
                 </p>
-                <p class="form--checkbox">
+                <p class="form__checkbox">
                     <input type="checkbox" name="water" id="water">
                     <label for="water">питьевая вода</label>
                 </p>
-                <p class="form--checkbox">
+                <p class="form__checkbox">
                     <input type="checkbox" name="milk" id="milk">
                     <label for="milk">молоко</label>
                 </p>
-                <p class="form--checkbox">
+                <p class="form__checkbox">
                     <input type="checkbox" name="vit" id="vit">
                     <label for="vit">витамины</label>
                 </p>
             </fieldset>
 
-            <button type="submit" class="form--button button">отправить заявку</button>
+            <button type="submit" class="form__button button">отправить заявку</button>
 
-            <p class="form--footnote">* — Обязательные поля</p>
+            <p class="form__footnote">* — Обязательные поля</p>
 
         </form>
     </section>
 
-    <section class="adress--location">
+    <section class="adress__location">
         <div>
-          <h3 class="adress--title">приглашаем к сотрудничеству дилеров!</h3>
-          <p class="adress--content">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          <h3 class="adress__title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="adress__content">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
-        <div class="adress--map">
+        <div class="adress__map">
         </div>
       </section>
 
     <footer class="footer">
-      <img src="https://via.placeholder.com/128x24" alt="Логотип" class="footer--logo">
-      <ul class="footer--social social">
-        <li class="social--button social--button__vk"><a href="#"></a></li>
-        <li class="social--button social--button__ins"><a href="#"></a></li>
-        <li class="social--button social--button__fb"><a href="#"></a></li>
+      <img src="https://via.placeholder.com/128x24" alt="Логотип" class="footer__logo">
+      <ul class="footer__social social">
+        <li class="social__button social__button--vk"><a href="#"></a></li>
+        <li class="social__button social__button--ins"><a href="#"></a></li>
+        <li class="social__button social__button--fb"><a href="#"></a></li>
       </ul>
-      <div class="footer--academy">
-        <a href="#" class="footer--academy-link"></a>
-        <img src="https://via.placeholder.com/27x34" alt="Academy" class="footer--academy-img">
+      <div class="footer__academy">
+        <a href="#" class="footer__academy-link"></a>
+        <img src="https://via.placeholder.com/27x34" alt="Academy" class="footer__academy-img">
       </div>
     </footer>
 
