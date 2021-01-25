@@ -2,19 +2,34 @@ let mobileMenu = document.querySelector('.header__menu');
 let menuOpen = document.querySelector('.header__switch-open');
 let menuClose = document.querySelector('.header__switch-close');
 
+// Прячу меню на мобильном разрешении
 
-// Бургер меню
+mobileMenu.classList.remove('header__menu--visible');
+mobileMenu.classList.add('header__menu--invisible');
+menuOpen.classList.remove('header__switch-open--invisible');
+menuOpen.classList.add('header__switch-open--visible');
+menuClose.classList.add('header__switch-close--invisible');
+menuClose.classList.remove('header__switch-close--visible');
+
+
+// Работа бургер меню
 
 menuOpen.onclick = function (evt) {
     evt.preventDefault;
-    mobileMenu.style = 'display: block;';
-    menuOpen.style = 'display: none;';
-    menuClose.style = 'display: block;';
+    mobileMenu.classList.add('header__menu--visible');
+    mobileMenu.classList.remove('header__menu--invisible');
+    menuOpen.classList.add('header__switch-open--invisible');
+    menuOpen.classList.remove('header__switch-open--visible');
+    menuClose.classList.remove('header__switch-close--invisible');
+    menuClose.classList.add('header__switch-close--visible');
 }
 
 menuClose.onclick = function (evt) {
     evt.preventDefault;
-    mobileMenu.style = 'display: none;';
-    menuOpen.style = 'display: block;';
-    menuClose.style = 'display: none;';
+    mobileMenu.classList.remove('header__menu--visible');
+    mobileMenu.classList.add('header__menu--invisible');
+    menuOpen.classList.remove('header__switch-open--invisible');
+    menuOpen.classList.add('header__switch-open--visible');
+    menuClose.classList.add('header__switch-close--invisible');
+    menuClose.classList.remove('header__switch-close--visible');
 }

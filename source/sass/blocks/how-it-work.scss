@@ -1,20 +1,22 @@
 .how-it-work {
-    margin-top: 27px;
+    margin-top: 23px;
     margin-bottom: 42px;
     @media (min-width: $tablet-width) {
         margin-top: 45px;
-        margin-bottom: 104px;
+        margin-bottom: 118px;
     }
     @media (min-width: $desktop-width) {
-        margin-top: 71px;
-        margin-bottom: 104px;
+        margin-top: 76px;
+        margin-bottom: 87px;
     }
 }
 
 .how-it-work__title {
     margin-bottom: 38px;
+    margin-top: 28px;
     @media (min-width: $tablet-width) {
-        margin-bottom: 72px;
+        margin-top: 30px;
+        margin-bottom: 75px;
     }
 }
 
@@ -25,7 +27,8 @@
     @media (min-width: $tablet-width) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 134px;
+        row-gap: 148px;
+        column-gap: 60px;
     }
     @media (min-width: $desktop-width) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -41,7 +44,7 @@
     align-items: center;
     position: relative;
     @media (min-width: $tablet-width) {
-        padding-top: 141px;
+        padding-top: 148px;
         padding-left: 0;
         line-height: 24px;
         max-width: calc(100% - 90px);
@@ -80,7 +83,7 @@
 
 .how-it-work__item--function {
     &::before {
-        background-image: url('../img/icon_leaf.svg');
+        background-image: url('../img/icon-leaf.svg');
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -95,7 +98,7 @@
 
 .how-it-work__item--dust {
     &::before {
-        background-image: url('../img/icon_tub.svg');
+        background-image: url('../img/icon-tub.svg');
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -110,7 +113,7 @@
 
 .how-it-work__item--replace {
     &::before {
-        background-image: url('../img/icon_eat.svg');
+        background-image: url('../img/icon-eat.svg');
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -124,8 +127,14 @@
 }
 
 .how-it-work__item--time {
+    @media (min-width: $tablet-width) {
+        max-width: calc(100% - 78px);
+    }
+    @media (min-width: $desktop-width) {
+        max-width: 100%;
+    }
     &::before {
-        background-image: url('../img/icon_alarm.svg');
+        background-image: url('../img/icon-alarm.svg');
         background-repeat: no-repeat;
         background-position: center;
     }

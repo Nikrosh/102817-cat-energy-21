@@ -1,4 +1,5 @@
 body {
+    position: relative;
     padding: 0;
     margin: 0;
     color: $dark-gray;
@@ -6,10 +7,23 @@ body {
     font-weight: 400;
     font-family: Arial, sans-serif;
     line-height: 18px;
-    overflow-x: hidden;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
     @media (min-width: $tablet-width) {
         font-size: 16px;
     }
+}
+
+.pp {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    opacity: 0.3;
+}
+
+main {
+    overflow: hidden;
 }
 
 *,
@@ -87,7 +101,7 @@ box-sizing: border-box;
     background-color: $green-base;
     color: #fff;
     font-family: Oswald, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 300;
     padding-top: 11px;
@@ -97,10 +111,22 @@ box-sizing: border-box;
     display: block;
     text-align: center;
     border: none;
+    transition: all 0.3s;
     @media (min-width: $tablet-width) {
         padding-top: 14px;
         padding-bottom: 14px;
-        font-size: 16px;
+        font-size: 20px;
+    }
+    @media (min-width: $desktop-width) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    &:hover {
+        background-color: $green-base-2;
+    }
+    &:active {
+        color: rgba($color: #ffffff, $alpha: 0.3);
+        background-color: $green-base-2;
     }
 }
 
@@ -118,10 +144,18 @@ box-sizing: border-box;
     display: block;
     text-align: center;
     border: none;
+    transition: all 0.3s;
     @media (min-width: $tablet-width) {
-        padding-top: 11px;
-        padding-bottom: 11px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         font-size: 20px;
+    }
+    &:hover {
+        background-color: $green-base-2;
+    }
+    &:active {
+        color: rgba($color: #ffffff, $alpha: 0.3);
+        background-color: $green-base-2;
     }
 }
 
@@ -139,6 +173,14 @@ box-sizing: border-box;
     display: block;
     text-align: center;
     border: none;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $green-base-2;
+    }
+    &:active {
+        color: rgba($color: #ffffff, $alpha: 0.3);
+        background-color: $green-base-2;
+    }
 }
 
 .container {

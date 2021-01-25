@@ -11,6 +11,7 @@
     border-bottom: 1px solid $gray-base;
     @media (min-width: $tablet-width) {
         border: none;
+        padding-top: 16px;
     }
 }
 
@@ -22,19 +23,46 @@
 .social__button--vk {
     width: 23px;
     height: 16px;
-    background-image: url('../img/icon_vkontakte.svg');
+    background-image: url('../img/icon-vkontakte.svg');
+    background-size: cover;
     margin-right: 36px;
+    @media (min-width: $tablet-width) {
+        width: 28px;
+        height: 22px;
+        margin-right: 27px;
+        &:hover {
+            background-image: url('../img/icon-vkontakte-green.svg');
+        }
+    }
+
 }
 
 .social__button--ins {
     width: 16px;
     height: 16px;
-    background-image: url('../img/icon_instagram.svg');
+    background-image: url('../img/icon-instagram.svg');
+    background-size: cover;
     margin-right: 33px;
+    @media (min-width: $tablet-width) {
+        width: 23px;
+        height: 23px;
+        margin-right: 21px;
+        &:hover {
+            background-image: url('../img/icon-instagram-green.svg');
+        }
+    }
 }
 
 .social__button--fb {
     width: 22px;
     height: 22px;
-    background-image: url('../img/icon_facebook.svg');
+    background-image: url('../img/icon-facebook.svg');
+    background-size: cover;
+    @media (min-width: $tablet-width) {
+        width: 28px;
+        height: 33px;
+        &:hover {
+            background-image: url('../img/icon-facebook-green.svg');
+        }
+    }
 }

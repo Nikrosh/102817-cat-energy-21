@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 80px;
-        margin-top: 82px;
+        margin-top: 31px;
     }
 }
 
@@ -21,7 +21,7 @@
         display: block;
     }
     @media (min-width: $tablet-width) {
-        padding-top: 77px;
+        padding-top: 80px;
         padding-left: 53px;
         padding-bottom: 53px;
         margin-top: 30px;
@@ -32,9 +32,12 @@
 }
 
 .targets__block--slim {
-    margin-top: 0;
+    margin-top: -5px;
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
     &::before {
-        background-image: url('../img/cat_back_slim.svg');
+        background-image: url('../img/cat-back-slim.svg');
         background-repeat: no-repeat;
         width: 50px;
         height: 53px;
@@ -60,8 +63,12 @@
 }
 
 .targets__block--pro {
+    margin-top: 30px;
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
     &::before {
-        background-image: url('../img/cat_back_weight.svg');
+        background-image: url('../img/cat-back-weight.svg');
         background-repeat: no-repeat;
         width: 67px;
         height: 50px;
@@ -99,10 +106,10 @@
         margin: 0;
         font-size: 36px;
         line-height: 36px;
-        margin-bottom: 24px;
+        margin-bottom: 26px;
     }
     @media (min-width: $desktop-width) {
-        margin-left: 156px;
+        margin-left: 158px;
         margin-bottom: 73px;
     }
 }
@@ -115,16 +122,19 @@
         line-height: 24px;
         max-width: calc(100% - 250px);
         border: none;
-        padding-bottom: 48px;
+        padding-bottom: 52px;
     }
     @media (min-width: $desktop-width) {
         max-width: 100%;
-        padding-bottom: 23px;
+        padding-bottom: 25px;
     }
 }
 
 .targets__text--pro {
     @media (min-width: $tablet-width) {
+        max-width: calc(100% - 280px);
+    }
+    @media (min-width: $desktop-width) {
         max-width: 100%;
     }
 }
@@ -139,23 +149,33 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 16px;
-    padding-top: 15px;
+    padding-top: 17px;
     position: relative;
+    transition: all 0.3s;
     &::before {
         content: '';
         position: absolute;
         width: 32px;
         height: 12px;
-        background-image: url('../img/icon_arrow.svg');
-        right: -47px;
-        top: 10px;
+        background-image: url('../img/icon-arrow.svg');
+        right: -50px;
+        top: 18px;
         @media (min-width: $tablet-width) {
             right: -55px;
+            top: 9px;
         }
+    }
+    &:hover {
+        &::before {
+            background-image: url('../img/icon-arrow-hover.svg');
+        }
+    }
+    &:active {
+        opacity: 0.3;
     }
     @media (min-width: $tablet-width) {
         padding: 0;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 30px;
     }
 }
