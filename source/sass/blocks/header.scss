@@ -27,7 +27,7 @@
             height: 692px;
         }
         @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-            background-image: url("../img/index-background-desktop@2.jpg");
+            background-image: url("../img/index-background-desktop@2.png");
         }
     }
     &::before {
@@ -381,9 +381,7 @@
     height: 270px;
     background-image: url('../img/index-can-mobile-1.png');
     background-repeat: no-repeat;
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url('../img/index-can@2.png');
-    }
+
     @media (min-width: $tablet-width) {
         background-image: url('../img/index-can-tablet-1.png');
         width: 709px;

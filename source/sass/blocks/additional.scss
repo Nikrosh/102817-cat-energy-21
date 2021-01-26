@@ -162,7 +162,7 @@
     line-height: 20px;
     text-align: center;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url('../img/icon-gift.svg'), url('../img/gift-photo-mobile-1@2.png');   
+        background-image: url('../img/icon-gift.svg'), url('../img/gift-photo-desktop@2.png');   
     }
     @media (min-width: $tablet-width) {
         background-position: center left 78px, center center;
