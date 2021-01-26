@@ -1,0 +1,181 @@
+.targets {
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        margin-top: 31px;
+    }
+}
+
+.targets__block {
+    background-color: $gray-bg;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 33px;
+    padding-bottom: 18px;
+    margin-top: 20px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+    }
+    @media (min-width: $tablet-width) {
+        padding-top: 80px;
+        padding-left: 53px;
+        padding-bottom: 53px;
+        margin-top: 30px;
+    }
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
+}
+
+.targets__block--slim {
+    margin-top: -5px;
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
+    &::before {
+        background-image: url('../img/cat-back-slim.svg');
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 53px;
+        top: 21px;
+        left: 22px;
+        @media (min-width: $tablet-width) {
+            top: 81px;
+            right: 62px;
+            left: auto;
+            width: 200px;
+            height: 211px;
+            background-size: cover;
+        }
+        @media (min-width: $desktop-width) {
+            margin-top: 0;
+            top: 41px;
+            right: auto;
+            left: 52px;
+            width: 100px;
+            height: 106px;
+        }
+    }
+}
+
+.targets__block--pro {
+    margin-top: 30px;
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
+    &::before {
+        background-image: url('../img/cat-back-weight.svg');
+        background-repeat: no-repeat;
+        width: 67px;
+        height: 50px;
+        top: 24px;
+        left: 13px;
+        @media (min-width: $tablet-width) {
+            top: 91px;
+            right: 28px;
+            left: auto;
+            width: 268px;
+            height: 200px;
+            background-size: cover;
+        }
+        @media (min-width: $desktop-width) {
+            top: 47px;
+            right: auto;
+            left: 33px;
+            width: 134px;
+            height: 100px;
+        }
+    }
+}
+
+.targets__title {
+    font-family: Oswald, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 37px;
+    color: #000;
+    margin-bottom: 29px;
+    margin-top: 0;
+    margin-left: 71px;
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 26px;
+    }
+    @media (min-width: $desktop-width) {
+        margin-left: 158px;
+        margin-bottom: 73px;
+    }
+}
+
+.targets__text {
+    padding-bottom: 23px;
+    border-bottom: 1px solid $gray-base;
+    margin-bottom: 0;
+    @media (min-width: $tablet-width) {
+        line-height: 24px;
+        max-width: calc(100% - 250px);
+        border: none;
+        padding-bottom: 52px;
+    }
+    @media (min-width: $desktop-width) {
+        max-width: 100%;
+        padding-bottom: 25px;
+    }
+}
+
+.targets__text--pro {
+    @media (min-width: $tablet-width) {
+        max-width: calc(100% - 280px);
+    }
+    @media (min-width: $desktop-width) {
+        max-width: 100%;
+    }
+}
+
+.targets__link {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 17px;
+    position: relative;
+    transition: all 0.3s;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 32px;
+        height: 12px;
+        background-image: url('../img/icon-arrow.svg');
+        right: -50px;
+        top: 18px;
+        @media (min-width: $tablet-width) {
+            right: -55px;
+            top: 9px;
+        }
+    }
+    &:hover {
+        &::before {
+            background-image: url('../img/icon-arrow-hover.svg');
+        }
+    }
+    &:active {
+        opacity: 0.3;
+    }
+    @media (min-width: $tablet-width) {
+        padding: 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

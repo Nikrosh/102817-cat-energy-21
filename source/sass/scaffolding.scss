@@ -1,0 +1,218 @@
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color: $dark-gray;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+    line-height: 18px;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+    }
+}
+
+.pp {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    opacity: 0.3;
+}
+
+main {
+    overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+box-sizing: border-box; 
+}
+
+.main-title {
+    font-family: Oswald, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 300;
+    @media (min-width: $tablet-width) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+.second-title {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    @media (min-width: $tablet-width) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+.second-title--inner {
+    margin-left: -20px;
+    font-size: 24px;
+    line-height: 26px;
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    padding-left: 22px;
+    padding-right: 15px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    @media (min-width: $tablet-width) {
+        font-size: 36px;
+        line-height: 36px;
+        padding-left: 39px;
+        padding-right: 38px;
+        margin-left: -37px;
+    }
+    &::after {
+        content: "";
+        background-color: $green-base;
+        width: 5000px;
+        height: 2px;
+        position: absolute;
+        left: -2500px;
+        top: 15px;
+        z-index: -2;
+        @media (min-width: $tablet-width) {
+            top: 20px;
+        }
+    }
+    &::before {
+        content: "";
+        background-color: #ffffff;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.button {
+    background-color: $green-base;
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: none;
+    transition: all 0.3s;
+    @media (min-width: $tablet-width) {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-size: 20px;
+    }
+    @media (min-width: $desktop-width) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    &:hover {
+        background-color: $green-base-2;
+    }
+    &:active {
+        color: rgba($color: #ffffff, $alpha: 0.3);
+        background-color: $green-base-2;
+    }
+}
+
+.button-form {
+    background-color: $green-base;
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: none;
+    transition: all 0.3s;
+    @media (min-width: $tablet-width) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 20px;
+    }
+    &:hover {
+        background-color: $green-base-2;
+    }
+    &:active {
+        color: rgba($color: #ffffff, $alpha: 0.3);
+        background-color: $green-base-2;
+    }
+}
+
+.button-catalog {
+    background-color: $green-base;
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: none;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $green-base-2;
+    }
+    &:active {
+        color: rgba($color: #ffffff, $alpha: 0.3);
+        background-color: $green-base-2;
+    }
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    @media (min-width: $tablet-width) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1220px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.container-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    @media (min-width: $tablet-width) {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1220px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

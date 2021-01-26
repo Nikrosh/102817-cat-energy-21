@@ -1,0 +1,96 @@
+.adress {
+    margin-bottom: -4px;
+
+}
+
+.adress__box {
+    @media (min-width: $desktop-width) {
+        width: 1220px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.adress_location {
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 28px;
+    padding-bottom: 25px;
+    @media (min-width: $tablet-width) {
+        padding-left: 71px;
+        padding-right: 71px;
+        padding-top: 58px;
+        padding-bottom: 51px;
+        align-items: center;
+    }
+    @media (min-width: $desktop-width) {
+        position: absolute;
+        background-color: #ffffff;
+        left: 0;
+        top: 95px;
+        padding-left: 75px;
+        padding-right: 71px;
+        padding-top: 58px;
+        padding-bottom: 51px;
+    }
+}
+
+.adress-inner {
+    padding-top: 4px;
+    background-color: $gray-bg;
+    margin-bottom: -10px;
+    @media (min-width: $desktop-width) {
+        background-color: #ffffff;
+    }
+}
+
+.adress__title {
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-right: 18px;
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 21px;
+        width: 170px;
+    }
+    @media (min-width: $desktop-width) {
+        width: 163px;
+        margin-right: 87px;
+        line-height: 24px;
+    }
+}
+
+.adress__content {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        width: 160px;
+    }
+    span {
+        @media (min-width: $tablet-width) {
+            display: inline-block;
+            padding-top: 20px;
+        }
+    }
+    @media (min-width: $desktop-width) {
+        text-align: left;
+    }
+}
+
+.adress__map {
+    width: 100%;
+    height: 362px;
+    @media (min-width: $tablet-width) {
+        height: 400px;
+    }
+}
